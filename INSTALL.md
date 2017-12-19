@@ -1,7 +1,7 @@
 **Thank you for installing Native!**
 
 
-There are three wo more steps to take:
+There are three more steps to take:
 
 1) Run `rails g native` and `rails db:migrate`
 2) Add to `assets/manifest.js`:

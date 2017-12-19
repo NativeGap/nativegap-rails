@@ -219,7 +219,7 @@ end
 
 **`#{platform}`** Set to `false` to disable the platform. Takes a boolean. Defaults to `true`.
 
-**`#{platform}_url`** Specify the start url of your app on a given platform. Takes a string. Defaults to `Rails.application.routes.url_helpers.root_path`.
+**`#{platform}_url`** Specify the start url of your app on a given platform by passing a stringified route helper. Takes a string. Defaults to `'root_url'`.
 
 **`scale_size`** Defining `:root` `font-size` on Android apps, [learn more](#content-scaling-android). Takes a string. Defaults to `'18px'`.
 

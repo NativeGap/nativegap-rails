@@ -1,2 +1,2 @@
-class ApplicationController
+class Native::ApplicationController < ActionController::Base
 end

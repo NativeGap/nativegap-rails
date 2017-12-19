@@ -33,15 +33,15 @@ module Native
             @win64 = true
             @lin32 = true
             @lin64 = true
-            @android_url = Rails.application.routes.url_helpers.root_path
-            @ios_url = Rails.application.routes.url_helpers.root_path
-            @uwp_url = Rails.application.routes.url_helpers.root_path
-            @chrome_url = Rails.application.routes.url_helpers.root_path
-            @osx_url = Rails.application.routes.url_helpers.root_path
-            @win32_url = Rails.application.routes.url_helpers.root_path
-            @win64_url = Rails.application.routes.url_helpers.root_path
-            @lin32_url = Rails.application.routes.url_helpers.root_path
-            @lin64_url = Rails.application.routes.url_helpers.root_path
+            @android_url = 'root_url'
+            @ios_url = 'root_url'
+            @uwp_url = 'root_url'
+            @chrome_url = 'root_url'
+            @osx_url = 'root_url'
+            @win32_url = 'root_url'
+            @win64_url = 'root_url'
+            @lin32_url = 'root_url'
+            @lin64_url = 'root_url'
             @scale_size = '18px'
         end
 

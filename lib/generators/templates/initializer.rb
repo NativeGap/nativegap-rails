@@ -19,16 +19,16 @@ Native.configure do |config|
     # config.lin32 = true
     # config.lin64 = true
 
-    # Specify a url helper to set a start url for each platform.
-    # config.android_url = Rails.application.routes.url_helpers.root_path
-    # config.ios_url = Rails.application.routes.url_helpers.root_path
-    # config.uwp_url = Rails.application.routes.url_helpers.root_path
-    # config.chrome_url = Rails.application.routes.url_helpers.root_path
-    # config.osx_url = Rails.application.routes.url_helpers.root_path
-    # config.win32_url = Rails.application.routes.url_helpers.root_path
-    # config.win64_url = Rails.application.routes.url_helpers.root_path
-    # config.lin32_url = Rails.application.routes.url_helpers.root_path
-    # config.lin64_url = Rails.application.routes.url_helpers.root_path
+    # Specify a stringified url helper to set a start url for each platform.
+    # config.android_url = 'root_url'
+    # config.ios_url = 'root_url'
+    # config.uwp_url = 'root_url'
+    # config.chrome_url = 'root_url'
+    # config.osx_url = 'root_url'
+    # config.win32_url = 'root_url'
+    # config.win64_url = 'root_url'
+    # config.lin32_url = 'root_url'
+    # config.lin64_url = 'root_url'
 
     # The Android platform does not scale the content correctly. Set your `font-size` of `:root` on Android
     # config.scale_size = '18px'

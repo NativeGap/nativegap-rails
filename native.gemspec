@@ -3,7 +3,7 @@ require File.expand_path(File.join('..', 'lib', 'native', 'version'), __FILE__)
 
 Gem::Specification.new do |gem|
     gem.name                  = 'native'
-    gem.version               = DeviseOnesignal::VERSION
+    gem.version               = Native::VERSION
     gem.platform              = Gem::Platform::RUBY
     gem.summary               = 'Build native apps for all major platforms from your Rails applications'
     gem.description           = 'Build native apps for all major platforms from your Rails applications.'

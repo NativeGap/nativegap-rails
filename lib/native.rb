@@ -14,7 +14,7 @@ module Native
     end
 
     class Engine < ::Rails::Engine
-        isolate_namespace Native
+        # isolate_namespace Native
     end
 
 end
