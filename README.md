@@ -5,6 +5,11 @@
 Creating cross-platform apps with Rails has never been this simple, pleasing & powerful. With very little code you can bring any Rails web application to every desktop or mobile platform you can think of.
 
 **Features:**
+    * Convert your Rails app to a native app
+    * Add custom assets for any of your platforms
+    * Customize your code for every platform by utilizing Native's view helpers
+    * Remember what apps/platforms your users are on
+    * Add native notifications
 
 **Platforms:**
     * Android
