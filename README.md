@@ -1,6 +1,6 @@
 # Native
 
-[![Gem Version](https://badge.fury.io/rb/native.svg)](https://badge.fury.io/rb/native) <img src="https://travis-ci.org/NativeGap/native-ruby.svg?branch=master" />
+[![Gem Version](https://badge.fury.io/rb/native.svg)](https://badge.fury.io/rb/native) <img src="https://travis-ci.org/NativeGap/native-rails.svg?branch=master" />
 
 Creating cross-platform apps with Rails has never been this simple, pleasing & powerful. With very little code you can bring any Rails web application to every desktop or mobile platform you can think of.
 
@@ -227,9 +227,9 @@ end
 
 ## To Do
 
-[Here](https://github.com/NativeGap/native-ruby/projects/1) is the full list of current projects.
+[Here](https://github.com/NativeGap/native-rails/projects/1) is the full list of current projects.
 
-To propose your ideas, initiate the discussion by adding a [new issue](https://github.com/NativeGap/native-ruby/issues/new).
+To propose your ideas, initiate the discussion by adding a [new issue](https://github.com/NativeGap/native-rails/issues/new).
 
 ---
 
@@ -237,13 +237,13 @@ To propose your ideas, initiate the discussion by adding a [new issue](https://g
 
 We hope that you will consider contributing to Native. Please read this short overview for some information about how to get started:
 
-[Learn more about contributing to this repository](https://github.com/NativeGap/native-ruby/blob/master/CONTRIBUTING.md), [Code of Conduct](https://github.com/NativeGap/native-ruby/blob/master/CODE_OF_CONDUCT.md)
+[Learn more about contributing to this repository](https://github.com/NativeGap/native-rails/blob/master/CONTRIBUTING.md), [Code of Conduct](https://github.com/NativeGap/native-rails/blob/master/CODE_OF_CONDUCT.md)
 
 ### Contributors
 
 Give the people some :heart: who are working on this project. See them all at:
 
-https://github.com/NativeGap/native-ruby/graphs/contributors
+https://github.com/NativeGap/native-rails/graphs/contributors
 
 ## License
 

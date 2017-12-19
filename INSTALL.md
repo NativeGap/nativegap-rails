@@ -32,4 +32,4 @@ There are three more steps to take:
     mount Native::Engine, at: '/native'
 
 
-Learn more at https://github.com/NativeGap/native-ruby
+Learn more at https://github.com/NativeGap/native-rails

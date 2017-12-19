@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
     gem.description           = 'Build native apps for all major platforms from your Rails applications.'
     gem.authors               = 'Jonas Hübotter'
     gem.email                 = 'jonas.huebotter@gmail.com'
-    gem.homepage              = 'https://github.com/NativeGap/native-ruby'
+    gem.homepage              = 'https://github.com/NativeGap/native-rails'
     gem.license               = 'MIT'
 
     gem.files                 = `git ls-files`.split("\n")
