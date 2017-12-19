@@ -22,9 +22,9 @@ Creating cross-platform apps with Rails has never been this simple, pleasing & p
 * Windows x32 / x64
 * Linux x32 / x64
 
-Native is being powered by **[NativeGap](https://nativegap.com)**.
+---
 
-**[Demo](https://nativegap.com)**
+Native is being powered by **[NativeGap](https://nativegap.com)**.
 
 ---
 
