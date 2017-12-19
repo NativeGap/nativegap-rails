@@ -4,47 +4,47 @@ class Native::PlatformsController < ApplicationController
 
     def android
         set_app 'android'
-        redirect_to Native.configuration.android_redirect
+        redirect_to Native.configuration.android_url
     end
 
     def ios
         set_app 'ios'
-        redirect_to Native.configuration.ios_redirect
+        redirect_to Native.configuration.ios_url
     end
 
     def uwp
         set_app 'uwp'
-        redirect_to Native.configuration.uwp_redirect
+        redirect_to Native.configuration.uwp_url
     end
 
     def chrome
         set_app 'chrome'
-        redirect_to Native.configuration.chrome_redirect
+        redirect_to Native.configuration.chrome_url
     end
 
     def osx
         set_app 'osx'
-        redirect_to Native.configuration.osx_redirect
+        redirect_to Native.configuration.osx_url
     end
 
     def win32
         set_app 'win32'
-        redirect_to Native.configuration.win32_redirect
+        redirect_to Native.configuration.win32_url
     end
 
     def win64
         set_app 'win64'
-        redirect_to Native.configuration.win64_redirect
+        redirect_to Native.configuration.win64_url
     end
 
     def lin32
         set_app 'lin32'
-        redirect_to Native.configuration.lin32_redirect
+        redirect_to Native.configuration.lin32_url
     end
 
     def lin64
         set_app 'lin64'
-        redirect_to Native.configuration.lin64_redirect
+        redirect_to Native.configuration.lin64_url
     end
 
     private

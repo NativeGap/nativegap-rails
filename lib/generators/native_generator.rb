@@ -44,6 +44,8 @@ class NativeGenerator < Rails::Generators::Base
         template 'application.js', 'app/assets/native/lin32/javascripts/application.js'
         template 'application.css', 'app/assets/native/lin64/stylesheets/application.css'
         template 'application.js', 'app/assets/native/lin64/javascripts/application.js'
+        template 'application.css', 'app/assets/native/web/stylesheets/application.css'
+        template 'application.js', 'app/assets/native/web/javascripts/application.js'
     end
 
     def show_readme

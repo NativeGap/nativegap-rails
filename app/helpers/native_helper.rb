@@ -5,7 +5,7 @@ module NativeHelper
     end
 
     def current_platform
-        current_app&.platform
+        current_app&.platform || 'web'
     end
 
     def native_assets
