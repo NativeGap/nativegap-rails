@@ -117,7 +117,7 @@ mount Native::Engine, at: '/native'
 
 ### NativeGap
 
-While this gem assists you in creating a true cross-platform app, [NativeGap](https://nativegap.com) is still needed to create the actual native code. That's not too big of a deal though, NativeApp can be used entirely for free and it has an extensive [documentation](https://nativegap.com/guide).
+While this gem assists you in creating a true cross-platform app, [NativeGap](https://nativegap.com) is still needed to create the actual native code. That's not too big of a deal though, NativeApp can be used entirely for [free](https://nativegap.com/pricing) and it has an extensive [documentation](https://nativegap.com/guide).
 
 Getting started with NativeGap:
 
