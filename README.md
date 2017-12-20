@@ -127,11 +127,11 @@ Getting started with NativeGap:
 
 That's it!
 
-Native also supports the coexistence of multiple NativeGap apps with only one Rails app as a source.
+**Note:** Native also supports the coexistence of multiple NativeGap apps with only one Rails app as a source.
 
 ### Assets
 
-With Native it is fairly simple to add platform specific stylesheets and scripts. In your assets directory you have a separate folder (in `app/assets/native`) for every platform which behaves similarly to the root assets folder. You are not only able to add custom assets for those platforms added by Native, but you can also add `web` specific assets.
+With Native it is fairly simple to add platform specific stylesheets and scripts. In your assets directory you have a separate folder (`app/assets/native`) for every platform behaving similarly to the root assets folder. You are not only able to add custom assets for those platforms added by Native, but you can also add `web` specific assets.
 
 You simple have to include ...
 
