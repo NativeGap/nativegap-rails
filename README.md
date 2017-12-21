@@ -106,7 +106,7 @@ Go to `app/assets/config/manifest.js` and add the following lines:
 Let's move on to your devise class. For instance `User` located in `app/models/user.rb`. Associate belonging `App` objects:
 
 ```ruby
-has_many :apps, class_name: 'Native::App'
+has_many :apps, class_name: 'Native::App', as: :owner
 ```
 
 Lastly, got to your routes file (`config/routes.rb`) and mount the `Native::Engine` class:
@@ -203,7 +203,7 @@ If you want to use them in your controllers, just add `include NativeHelper` at 
 
 ### Notifications
 
-You can enable native notifications on most platforms. To handle notifications Native integrates with thew [notifications-rails](https://github.com/jonhue/notifications-rails) gem.
+You can enable native notifications on most platforms. To handle notifications Native integrates with the [notifications-rails](https://github.com/jonhue/notifications-rails) gem.
 
 ### Content scaling (Android)
 
@@ -223,7 +223,7 @@ This will adjust the `font-size` of `:root`. The pixel value can be [configured]
 
 ## Configuration
 
-You can configure Native by passing a block to `configure`:
+You can configure Native by passing a block to `configure`. This can be done in `config/initializers/native.rb`:
 
 ```ruby
 Native.configure do |config|
