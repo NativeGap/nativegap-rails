@@ -223,7 +223,7 @@ This will adjust the `font-size` of `:root`. The pixel value can be [configured]
 
 ## Configuration
 
-You can configure Native by passing a block to `configure`:
+You can configure Native by passing a block to `configure`. This can be done in `config/initializers/native.rb`:
 
 ```ruby
 Native.configure do |config|
