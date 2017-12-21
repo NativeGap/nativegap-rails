@@ -203,7 +203,7 @@ If you want to use them in your controllers, just add `include NativeHelper` at 
 
 ### Notifications
 
-You can enable native notifications on most platforms. To handle notifications Native integrates with thew [notifications-rails](https://github.com/jonhue/notifications-rails) gem.
+You can enable native notifications on most platforms. To handle notifications Native integrates with the [notifications-rails](https://github.com/jonhue/notifications-rails) gem.
 
 ### Content scaling (Android)
 
