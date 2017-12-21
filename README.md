@@ -106,7 +106,7 @@ Go to `app/assets/config/manifest.js` and add the following lines:
 Let's move on to your devise class. For instance `User` located in `app/models/user.rb`. Associate belonging `App` objects:
 
 ```ruby
-has_many :apps, class_name: 'Native::App'
+has_many :apps, class_name: 'Native::App', as: :owner
 ```
 
 Lastly, got to your routes file (`config/routes.rb`) and mount the `Native::Engine` class:
