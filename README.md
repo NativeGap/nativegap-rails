@@ -35,6 +35,7 @@ Native is being powered by **[NativeGap](https://nativegap.com)**.
     * [NativeGap](#nativegap)
     * [Assets](#assets)
     * [App methods](#app-methods)
+        * [Associate objects](#associate-objects)
     * [View methods](#view-methods)
     * [Notifications](#notifications)
     * [Content scaling (Android)](#content-scaling-android)
@@ -42,6 +43,7 @@ Native is being powered by **[NativeGap](https://nativegap.com)**.
 * [To Do](#to-do)
 * [Contributing](#contributing)
     * [Contributors](#contributors)
+    * [Semantic versioning](#semantic-versioning)
 * [License](#license)
 
 ---
@@ -148,8 +150,8 @@ Native introduces an `App` activerecord model. Every object of your devise class
 ```ruby
 a = App.first
 
-# Returns user (or other devise object) that this device belongs to. Can return `nil`.
-a.user
+# Returns associated object. Can return `nil`.
+a.owner
 
 # Returns lowercase string of platform.
 d.platform
@@ -174,6 +176,20 @@ d.platforms
 # Group apps by `url`
 d.apps
 ```
+
+#### Associate objects
+
+If you are using Devise and your model is named `User`, the object returned by `current_user` will automatically be associated with the current app. If your Devise model is not named `User` or you are using a different user-management solution that does not implement a `current_user` method, you are able to override this default behavior.
+
+Let's say our Devise model is named `Admin`. Just add a `private` method to your `ApplicationController`:
+
+```ruby
+def set_app_owner
+    current_admin if current_admin
+end
+```
+
+**Note:** Essentially `set_app_owner` has to return a class object *or* `nil`.
 
 ### View methods
 
@@ -211,11 +227,9 @@ You can configure Native by passing a block to `configure`:
 
 ```ruby
 Native.configure do |config|
-    config.devise_class = 'User'
+    config.android = true
 end
 ```
-
-**`devise_class`** Specify your devise class. Takes a string. Defaults to `'User'`.
 
 **`#{platform}`** Set to `false` to disable the platform. Takes a boolean. Defaults to `true`.
 
@@ -244,6 +258,10 @@ We hope that you will consider contributing to Native. Please read this short ov
 Give the people some :heart: who are working on this project. See them all at:
 
 https://github.com/NativeGap/native-rails/graphs/contributors
+
+### Semantic Versioning
+
+Native follows Semantic Versioning 2.0 as defined at http://semver.org.
 
 ## License
 

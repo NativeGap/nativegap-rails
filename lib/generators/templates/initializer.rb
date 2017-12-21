@@ -1,13 +1,5 @@
 Native.configure do |config|
 
-    ### DEVISE ###
-
-    # Specify your devise class. Defaults to `'User'`.
-    # config.devise_class = 'User'
-
-
-    ### CUSTOMIZATION ###
-
     # Specify platforms your app supports.
     # config.android = true
     # config.ios = true

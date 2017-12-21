@@ -2,7 +2,7 @@ class NativeMigration < ActiveRecord::Migration<%= migration_version %>
     def change
         create_table :native_apps do |t|
 
-            t.references Native.configuration.devise_class.downcase.to_sym, index: true
+            t.references :owner, polymorphic: true, index: true
 
             t.string :platform, index: true
             t.string :url, index: true

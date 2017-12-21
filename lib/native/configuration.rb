@@ -1,7 +1,6 @@
 module Native
     class Configuration
 
-        attr_accessor :devise_class
         attr_accessor :android
         attr_accessor :ios
         attr_accessor :uwp
@@ -23,7 +22,6 @@ module Native
         attr_accessor :scale_size
 
         def initialize
-            @devise_class = 'User'
             @android = true
             @ios = true
             @uwp = true

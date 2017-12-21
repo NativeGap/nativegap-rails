@@ -4,6 +4,6 @@ class Native::App < ActiveRecord::Base
 
     include Native::AppLib
 
-    belongs_to Native.configuration.devise_class.downcase.to_sym, optional: true
+    belongs_to :owner, polymorphic: true, optional: true
 
 end

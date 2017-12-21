@@ -60,7 +60,7 @@ module Native
                 @app.platform = platform
                 @app.url = url
             end
-            @app.send( "#{Native.configuration.devise_class.downcase}=", send("current_#{Native.configuration.devise_class.downcase}") ) if send("current_#{Native.configuration.devise_class.downcase}")
+            @app.owner = ApplicationController.set_app_owner || set_app_owner
             @app.last_used = Time.now
             @app.save!
 
