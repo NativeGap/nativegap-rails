@@ -60,13 +60,17 @@ module Native
                 @app.platform = platform
                 @app.url = url
             end
-            @app.owner = ApplicationController.set_app_owner || set_app_owner
+            @app.owner = ApplicationController.try(:set_app_owner) || set_app_owner
             @app.last_used = Time.now
             @app.save!
 
             cookies[:nativeAppId] = @app.id
             cookies[:nativePlatform] = platform
             cookies[:nativeApp] = url
+        end
+
+        def set_app_owner
+            current_user if current_user
         end
 
     end
