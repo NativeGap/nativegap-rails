@@ -14,13 +14,13 @@ Creating cross-platform apps with Rails has never been this simple, pleasing & p
 
 **Platforms:**
 
-* Android
-* iOS
-* Universal Windows Platform (Windows 10)
-* Chrome
-* OSX / MacOS
-* Windows x32 / x64
-* Linux x32 / x64
+* Android (`android`)
+* iOS (`ios`)
+* Universal Windows Platform (Windows 10) (`uwp`)
+* Chrome (`chrome`)
+* OSX / MacOS (`osx`)
+* Windows x32 / x64 (`win32`, `win64`)
+* Linux x32 / x64 (`lin32`, `lin64`)
 
 ---
 
@@ -188,7 +188,7 @@ You can enable native notifications on most platforms. To handle notifications N
 
 ### Content scaling (Android)
 
-NativeGap apps on Android often look scaled down. To fix this in your app add the following to `app/assets/native/android/javascripts/application.js`:
+NativeGap apps on Android often look scaled down. To fix this in your app add the following to `app/assets/javascripts/native/android.js`:
 
 ```js
 //= require nativeScale
