@@ -182,7 +182,7 @@ You can enable native notifications on most platforms. To handle notifications N
 
 ### Content scaling (Android)
 
-NativeGap apps on Android often look scaled down. To fix this in your app add the following to `app/assets/javascripts/native/android/scaling.js`:
+NativeGap apps on Android often look scaled down. To fix this in your app add the following to `app/assets/javascripts/native/android.js`:
 
 ```js
 //= require nativeScale
