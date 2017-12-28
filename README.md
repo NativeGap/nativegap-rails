@@ -81,8 +81,7 @@ To wrap things up, migrate the changes into your database:
 Let's move on to your devise class. For instance `User` located in `app/models/user.rb`. Associate belonging `App` objects:
 
 ```ruby
-has_native_apps
-# has_many :apps, class_name: 'Native::App', as: :owner
+uses_native_apps
 ```
 
 Lastly, got to your routes file (`config/routes.rb`) and mount the `Native::Engine` class:
@@ -117,7 +116,7 @@ You simple have to include ...
 = native_assets
 ```
 
-... in the `head` tag of your layout.
+... in the `head` tag of your layout after your other asset include tags.
 
 ### App methods
 

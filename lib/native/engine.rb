@@ -1,4 +1,4 @@
-require 'rails/railtie'
+require 'rails'
 
 module Native
     class Engine < ::Rails::Engine
