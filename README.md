@@ -78,35 +78,11 @@ To wrap things up, migrate the changes into your database:
 
     $ rails db:migrate
 
-Go to `app/assets/config/manifest.js` and add the following lines:
-
-```js
-//= link_directory ../native/android/javascripts .js
-//= link_directory ../native/android/stylesheets .css
-//= link_directory ../native/ios/javascripts .js
-//= link_directory ../native/ios/stylesheets .css
-//= link_directory ../native/uwp/javascripts .js
-//= link_directory ../native/uwp/stylesheets .css
-//= link_directory ../native/chrome/javascripts .js
-//= link_directory ../native/chrome/stylesheets .css
-//= link_directory ../native/osx/javascripts .js
-//= link_directory ../native/osx/stylesheets .css
-//= link_directory ../native/win32/javascripts .js
-//= link_directory ../native/win32/stylesheets .css
-//= link_directory ../native/win64/javascripts .js
-//= link_directory ../native/win64/stylesheets .css
-//= link_directory ../native/lin32/javascripts .js
-//= link_directory ../native/lin32/stylesheets .css
-//= link_directory ../native/lin64/javascripts .js
-//= link_directory ../native/lin64/stylesheets .css
-//= link_directory ../native/web/javascripts .js
-//= link_directory ../native/web/stylesheets .css
-```
-
 Let's move on to your devise class. For instance `User` located in `app/models/user.rb`. Associate belonging `App` objects:
 
 ```ruby
-has_many :apps, class_name: 'Native::App', as: :owner
+has_native_apps
+# has_many :apps, class_name: 'Native::App', as: :owner
 ```
 
 Lastly, got to your routes file (`config/routes.rb`) and mount the `Native::Engine` class:
@@ -133,7 +109,7 @@ That's it!
 
 ### Assets
 
-With Native it is fairly simple to add platform specific stylesheets and scripts. In your assets directory you have a separate folder (`app/assets/native`) for every platform behaving similarly to the root assets folder. You are not only able to add custom assets for those platforms added by Native, but you can also add `web` specific assets.
+With Native it is fairly simple to add platform specific stylesheets and scripts. In your assets directory you have a new folder for your `javascripts` and `stylesheets` (`app/assets/.../native`). In these two folders you are able to add custom assets for specific platforms including `web` specific assets.
 
 You simple have to include ...
 
@@ -145,7 +121,7 @@ You simple have to include ...
 
 ### App methods
 
-Native introduces an `App` activerecord model. Every object of your devise class can have multiple apps.
+Native introduces an `App` ActiveRecord model. Every object of your devise class can have multiple apps.
 
 ```ruby
 a = App.first
