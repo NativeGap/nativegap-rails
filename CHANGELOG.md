@@ -4,6 +4,13 @@
 
 * nothing yet
 
+### 2.1.0 - 2017-12-28
+
+* features
+    * introduced `uses_native_apps` method to ActiveRecord models
+* bugfixes
+    * fixed assets precompilation for native platforms
+
 ### 2.0.1 - 2017-12-21
 
 * bugfixes
