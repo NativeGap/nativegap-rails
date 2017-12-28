@@ -9,8 +9,8 @@ module NativeHelper
     end
 
     def native_assets
-        stylesheet = stylesheet_link_tag "native/#{current_platform}/stylesheets/application", media: 'all', 'data-turbolinks-track': 'reload'
-        javascript = javascript_include_tag "native/#{current_platform}/javascripts/application", 'data-turbolinks-track': 'reload'
+        stylesheet = stylesheet_link_tag "native/#{current_platform}", media: 'all', 'data-turbolinks-track': 'reload'
+        javascript = javascript_include_tag "native/#{current_platform}", 'data-turbolinks-track': 'reload'
         stylesheet.concat javascript
     end
 

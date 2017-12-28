@@ -26,26 +26,16 @@ class NativeGenerator < Rails::Generators::Base
     end
 
     def create_assets
-        template 'application.css', 'app/assets/native/android/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/android/javascripts/application.js'
-        template 'application.css', 'app/assets/native/ios/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/ios/javascripts/application.js'
-        template 'application.css', 'app/assets/native/uwp/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/uwp/javascripts/application.js'
-        template 'application.css', 'app/assets/native/chrome/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/chrome/javascripts/application.js'
-        template 'application.css', 'app/assets/native/osx/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/osx/javascripts/application.js'
-        template 'application.css', 'app/assets/native/win32/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/win32/javascripts/application.js'
-        template 'application.css', 'app/assets/native/win64/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/win64/javascripts/application.js'
-        template 'application.css', 'app/assets/native/lin32/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/lin32/javascripts/application.js'
-        template 'application.css', 'app/assets/native/lin64/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/lin64/javascripts/application.js'
-        template 'application.css', 'app/assets/native/web/stylesheets/application.css'
-        template 'application.js', 'app/assets/native/web/javascripts/application.js'
+        create_assets_for 'android'
+        create_assets_for 'ios'
+        create_assets_for 'uwp'
+        create_assets_for 'chrome'
+        create_assets_for 'osx'
+        create_assets_for 'win32'
+        create_assets_for 'win64'
+        create_assets_for 'lin32'
+        create_assets_for 'lin64'
+        create_assets_for 'web'
     end
 
     def show_readme
@@ -58,6 +48,14 @@ class NativeGenerator < Rails::Generators::Base
         if Rails.version >= '5.0.0'
             "[#{Rails::VERSION::MAJOR}.#{Rails::VERSION::MINOR}]"
         end
+    end
+
+    def create_assets_for platform
+        @platform = platform
+        template 'application.css.erb', "app/assets/stylesheets/native/#{platform}.css"
+        template '.keep', "app/assets/stylesheets/native/#{platform}/.keep"
+        template 'application.js.erb', "app/assets/javascripts/native/#{platform}.js"
+        template '.keep', "app/assets/javascripts/native/#{platform}/.keep"
     end
 
 end
