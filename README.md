@@ -166,6 +166,12 @@ end
 
 **Note:** Essentially `set_app_owner` has to return a class object *or* `nil`.
 
+Now you are able to access the applications used by an user:
+
+```ruby
+User.first.native_apps
+```
+
 ### View methods
 
 **`current_app`** Returns `App` object related to current session. Returns `nil` when the Rails is being used normally.

@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.1.1 - 2017-12-28
+
+* bugfixes
+    * fixed `uses_native_apps` method
+
 ### 2.1.0 - 2017-12-28
 
 * features

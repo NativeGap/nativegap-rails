@@ -7,7 +7,7 @@ module Native
 
         module ClassMethods
             def uses_native_apps
-                has_many :apps, class_name: 'Native::App', as: :owner, dependent: :destroy
+                has_many :native_apps, class_name: 'Native::App', as: :owner, dependent: :destroy
             end
         end
 
