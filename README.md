@@ -156,9 +156,11 @@ d.apps
 
 If you are using Devise and your model is named `User`, the object returned by `current_user` will automatically be associated with the current app. If your Devise model is not named `User` or you are using a different user-management solution that does not implement a `current_user` method, you are able to override this default behavior.
 
-Let's say our Devise model is named `Admin`. Just add a `private` method to your `ApplicationController`:
+Let's say our Devise model is named `Admin`. Just add a `protected` method to your `ApplicationController`:
 
 ```ruby
+protected
+
 def set_app_owner
     current_admin if current_admin
 end

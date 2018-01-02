@@ -1,5 +1,3 @@
-require_dependency 'native/application_controller'
-
 module Native
     class PlatformsController < ApplicationController
 
@@ -60,7 +58,7 @@ module Native
                 @app.platform = platform
                 @app.url = url
             end
-            @app.owner = ApplicationController.try(:set_app_owner) || set_app_owner
+            @app.owner = set_app_owner
             @app.last_used = Time.now
             @app.save!
 
@@ -70,7 +68,7 @@ module Native
         end
 
         def set_app_owner
-            current_user if current_user
+            super || current_user if current_user
         end
 
     end
