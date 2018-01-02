@@ -67,9 +67,5 @@ module Native
             cookies[:nativeApp] = url
         end
 
-        def set_app_owner
-            super || current_user if current_user
-        end
-
     end
 end

@@ -4,6 +4,13 @@
 
 * nothing yet
 
+### 2.1.3 - 2018-01-02
+
+* enhancements
+    * automatically include helper in controllers
+* bugfixes
+    * fixed overriding `set_app_owner` method
+
 ### 2.1.2 - 2018-01-02
 
 * bugfixes

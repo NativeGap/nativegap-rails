@@ -14,4 +14,8 @@ module NativeHelper
         stylesheet.concat javascript
     end
 
+    def set_app_owner
+        current_user if current_user
+    end
+
 end
