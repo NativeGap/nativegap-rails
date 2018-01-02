@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.1.2 - 2018-01-02
+
+* bugfixes
+    * fixed overriding `set_app_owner` method
+
 ### 2.1.1 - 2017-12-28
 
 * bugfixes
