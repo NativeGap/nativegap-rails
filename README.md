@@ -90,6 +90,14 @@ Lastly, got to your routes file (`config/routes.rb`) and mount the `Native::Engi
 mount Native::Engine, at: '/native'
 ```
 
+Make also sure to add the following to your app config (`config/application.rb`):
+
+```ruby
+config.action_dispatch.default_headers = {
+   'X-Frame-Options' => 'ALLOWALL'
+}
+```
+
 ## Usage
 
 ### NativeGap
