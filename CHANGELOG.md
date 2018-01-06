@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 2.1.4 - 2018-01-06
+
+* enhancements
+    * cleaning up gem files
+
 ### 2.1.3 - 2018-01-02
 
 * enhancements

@@ -1,4 +1,4 @@
-require 'rails'
+require 'rails/railtie'
 
 module Native
     class Railtie < Rails::Railtie

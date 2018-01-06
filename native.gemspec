@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
     gem.homepage              = 'https://github.com/NativeGap/native-rails'
     gem.license               = 'MIT'
 
-    gem.files                 = `git ls-files`.split("\n")
+    gem.files                 = Dir['README.md', 'CHANGELOG.md', 'LICENSE', 'lib/**/*', 'app/**/*', 'config/**/*', 'vendor/**/*']
     gem.require_paths         = ['lib']
 
     gem.post_install_message  = IO.read('INSTALL.md')
