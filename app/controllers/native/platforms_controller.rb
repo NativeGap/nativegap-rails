@@ -21,31 +21,6 @@ module Native
             redirect_to send(Native.configuration.chrome_url)
         end
 
-        def osx
-            set_app 'osx'
-            redirect_to send(Native.configuration.osx_url)
-        end
-
-        def win32
-            set_app 'win32'
-            redirect_to send(Native.configuration.win32_url)
-        end
-
-        def win64
-            set_app 'win64'
-            redirect_to send(Native.configuration.win64_url)
-        end
-
-        def lin32
-            set_app 'lin32'
-            redirect_to send(Native.configuration.lin32_url)
-        end
-
-        def lin64
-            set_app 'lin64'
-            redirect_to send(Native.configuration.lin64_url)
-        end
-
         private
 
         def set_app platform

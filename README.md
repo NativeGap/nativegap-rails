@@ -18,9 +18,6 @@ Creating cross-platform apps with Rails has never been this simple, pleasing & p
 * iOS (`ios`)
 * Universal Windows Platform (Windows 10) (`uwp`)
 * Chrome (`chrome`)
-* OSX / MacOS (`osx`)
-* Windows x32 / x64 (`win32`, `win64`)
-* Linux x32 / x64 (`lin32`, `lin64`)
 
 ---
 
@@ -50,7 +47,7 @@ Native is being powered by **[NativeGap](https://nativegap.com)**.
 
 ## Installation
 
-Native works with Rails 5.0 onwards. You can add it to your `Gemfile` with:
+Native works with Rails 5 onwards. You can add it to your `Gemfile` with:
 
 ```ruby
 gem 'native'

@@ -30,11 +30,6 @@ class NativeGenerator < Rails::Generators::Base
         create_assets_for 'ios'
         create_assets_for 'uwp'
         create_assets_for 'chrome'
-        create_assets_for 'osx'
-        create_assets_for 'win32'
-        create_assets_for 'win64'
-        create_assets_for 'lin32'
-        create_assets_for 'lin64'
         create_assets_for 'web'
     end
 
