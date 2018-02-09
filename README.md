@@ -14,7 +14,7 @@ Build native apps for all major platforms with NativeGap.
 #### How it works ...
 
 1. Create and customize your apps from the [NativeGap dashboard](https://nativegap.com).
-2. Add NativeGap.js to your app in order to track currently used apps and to add some custom styling.
+2. Add [NativeGap.js](https://github.com/NativeGap/nativegap.js) to your app in order to track currently used apps and to add some custom styling.
 3. Use this gem to track app usage for your users and to add platform specific assets.
 
 ---
