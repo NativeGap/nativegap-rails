@@ -4,7 +4,7 @@
 
 * nothing yet
 
-### 3.0.0 - 2018/01/06
+### 3.0.0 - 2018/01/09
 
 * features
     * streamlined `App` model
