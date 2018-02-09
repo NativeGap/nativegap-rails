@@ -1,4 +1,4 @@
-Native.configure do |config|
+NativeGap.configure do |config|
 
     # Specify platforms your app supports.
     # config.android = true

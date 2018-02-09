@@ -1,4 +1,4 @@
-module Native
+module NativeGap
 
     class << self
         attr_accessor :configuration

@@ -1,6 +1,6 @@
-class Native::AppLibrary < ApplicationRecord
+class NativeGap::AppLibrary < ApplicationRecord
 
-    self.table_name = 'native_apps'
+    self.table_name = 'native_gap_apps'
 
     belongs_to :owner, polymorphic: true, optional: true
 

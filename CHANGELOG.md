@@ -14,12 +14,12 @@
 * enhancements
     * automatically include helper in controllers
 * bugfixes
-    * fixed overriding `set_app_user` method
+    * fixed overriding `set_nativegap_user` method
 
 ### 2.1.2 - 2018-01-02
 
 * bugfixes
-    * fixed overriding `set_app_user` method
+    * fixed overriding `set_nativegap_user` method
 
 ### 2.1.1 - 2017-12-28
 

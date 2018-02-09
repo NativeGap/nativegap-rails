@@ -1,7 +1,7 @@
 require 'rails/railtie'
 
-module Native
+module NativeGap
     class Engine < ::Rails::Engine
-        # isolate_namespace Native
+        # isolate_namespace NativeGap
     end
 end

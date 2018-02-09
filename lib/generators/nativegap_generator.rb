@@ -1,12 +1,12 @@
 require 'rails/generators'
 require 'rails/generators/migration'
 
-class NativeGenerator < Rails::Generators::Base
+class NativegapGenerator < Rails::Generators::Base
 
     include Rails::Generators::Migration
 
     source_root File.join File.dirname(__FILE__), 'templates'
-    desc 'Install Native'
+    desc 'Install NativeGap'
 
     def self.next_migration_number dirname
         if ActiveRecord::Base.timestamped_migrations
@@ -17,12 +17,12 @@ class NativeGenerator < Rails::Generators::Base
     end
 
     def create_initializer
-        template 'initializer.rb', 'config/initializers/native.rb'
+        template 'initializer.rb', 'config/initializers/nativegap.rb'
     end
 
     def create_app_model
-        migration_template 'apps_migration.rb.erb', 'db/migrate/native_migration.rb', migration_version: migration_version
-        template 'app_model.rb', 'app/models/native/app.rb'
+        migration_template 'apps_migration.rb.erb', 'db/migrate/nativegap_migration.rb', migration_version: migration_version
+        template 'app_model.rb', 'app/models/native_gap/app.rb'
     end
 
     def create_assets
@@ -47,10 +47,10 @@ class NativeGenerator < Rails::Generators::Base
 
     def create_assets_for platform
         @platform = platform
-        template 'application.css.erb', "app/assets/stylesheets/native/#{platform}.css"
-        template '.keep', "app/assets/stylesheets/native/#{platform}/.keep"
-        template 'application.js.erb', "app/assets/javascripts/native/#{platform}.js"
-        template '.keep', "app/assets/javascripts/native/#{platform}/.keep"
+        template 'application.css.erb', "app/assets/stylesheets/nativegap/#{platform}.css"
+        template 'keep-file', "app/assets/stylesheets/nativegap/#{platform}/.keep"
+        template 'application.js.erb', "app/assets/javascripts/nativegap/#{platform}.js"
+        template 'keep-file', "app/assets/javascripts/nativegap/#{platform}/.keep"
     end
 
 end

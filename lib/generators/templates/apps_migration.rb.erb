@@ -1,6 +1,6 @@
-class NativeMigration < ActiveRecord::Migration<%= migration_version %>
+class NativegapMigration < ActiveRecord::Migration<%= migration_version %>
     def change
-        create_table :native_apps do |t|
+        create_table :native_gap_apps do |t|
 
             t.references :owner, polymorphic: true, index: true
 

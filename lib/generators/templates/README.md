@@ -1,1 +1,1 @@
-Now run `rails db:migrate` to add Native to your database.
+Now run `rails db:migrate` to add NativeGap to your database.

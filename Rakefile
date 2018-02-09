@@ -2,7 +2,7 @@ require 'bundler/gem_tasks'
 require 'rspec/core/rake_task'
 
 system 'bundle'
-system 'gem build native.gemspec'
+system 'gem build nativegap.gemspec'
 
 
 RSpec::Core::RakeTask.new

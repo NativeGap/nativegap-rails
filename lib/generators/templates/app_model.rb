@@ -1,2 +1,2 @@
-class Native::App < Native::AppLibrary
+class NativeGap::App < NativeGap::AppLibrary
 end
