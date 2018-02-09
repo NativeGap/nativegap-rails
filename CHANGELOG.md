@@ -4,6 +4,11 @@
 
 * nothing yet
 
+### 3.0.1 - 2018/01/09
+
+* enhancements
+    * remove unnecessary configuration options
+
 ### 3.0.0 - 2018/01/09
 
 * features
