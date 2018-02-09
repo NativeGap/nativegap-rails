@@ -164,12 +164,12 @@ If you are using Devise and your model is named `User`, the object returned by `
 Let's say our Devise model is named `Admin`. Just add a method to your `ApplicationController`:
 
 ```ruby
-def set_app_owner
+def set_app_user
     current_admin if current_admin
 end
 ```
 
-**Note:** Essentially `set_app_owner` has to return a class object *or* `nil`.
+**Note:** Essentially `set_app_user` has to return a class object *or* `nil`.
 
 Now you are able to access the applications used by an user:
 

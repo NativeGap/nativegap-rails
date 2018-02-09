@@ -19,7 +19,6 @@ module Native
         attr_accessor :ios_url
         attr_accessor :windows_url
         attr_accessor :chrome_url
-        attr_accessor :scale_size
 
         def initialize
             @android = true
@@ -30,7 +29,6 @@ module Native
             @ios_url = 'root_url'
             @windows_url = 'root_url'
             @chrome_url = 'root_url'
-            @scale_size = '18px'
         end
 
     end

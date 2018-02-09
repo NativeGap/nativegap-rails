@@ -1,9 +1,0 @@
-function nativeScale() {
-    if ( $(':root').css('font-size') == '<%= Native.configuration.scale_size %>' ) {
-        $(':root').css({ 'font-size': '<%= Native.configuration.scale_size %>' });
-    } else {
-        $('body *').css({ 'transition': 'none' });
-        $(':root').css({ 'font-size': '<%= Native.configuration.scale_size %>' });
-        $('body *').css({ 'transition': 'inherit' });
-    };
-};

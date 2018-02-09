@@ -33,7 +33,7 @@ module Native
                 @app.platform = platform
                 @app.url = url
             end
-            @app.owner = set_app_owner
+            @app.owner = set_app_user
             @app.last_used = Time.now
             @app.save!
 

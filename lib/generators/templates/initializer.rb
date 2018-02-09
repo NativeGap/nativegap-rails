@@ -12,7 +12,4 @@ Native.configure do |config|
     # config.windows_url = 'root_url'
     # config.chrome_url = 'root_url'
 
-    # The Android platform does not scale the content correctly. Set your `font-size` of `:root` on Android
-    # config.scale_size = '18px'
-
 end

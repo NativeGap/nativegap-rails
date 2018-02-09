@@ -3,9 +3,15 @@ require 'rails/railtie'
 module Native
     class Railtie < Rails::Railtie
 
+        initializer 'native.mozaic' do
+            Mozaic.configure do |config|
+                config.define_component 'native/assets'
+            end
+        end
+
         initializer 'native.active_record' do
             ActiveSupport.on_load :active_record do
-                include Native::Owner
+                include NativeModel
             end
         end
 

@@ -8,13 +8,7 @@ module NativeHelper
         current_app&.platform || 'web'
     end
 
-    def native_assets
-        stylesheet = stylesheet_link_tag "native/#{current_platform}", media: 'all', 'data-turbolinks-track': 'reload'
-        javascript = javascript_include_tag "native/#{current_platform}", 'data-turbolinks-track': 'reload'
-        stylesheet.concat javascript
-    end
-
-    def set_app_owner
+    def set_app_user
         current_user if current_user
     end
 
