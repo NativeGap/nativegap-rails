@@ -11,9 +11,9 @@ module Native
             redirect_to send(Native.configuration.ios_url)
         end
 
-        def uwp
-            set_app 'uwp'
-            redirect_to send(Native.configuration.uwp_url)
+        def windows
+            set_app 'windows'
+            redirect_to send(Native.configuration.windows_url)
         end
 
         def chrome

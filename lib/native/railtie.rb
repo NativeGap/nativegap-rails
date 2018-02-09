@@ -16,7 +16,7 @@ module Native
         end
 
         initializer 'native.sprockets-rails' do
-            Rails.application.config.assets.precompile += %w( native/android.js native/ios.js native/uwp.js native/chrome.js native/web.js native/android.css native/ios.css native/uwp.css native/chrome.css native/web.css )
+            Rails.application.config.assets.precompile += %w( native/android.js native/ios.js native/windows.js native/chrome.js native/web.js native/android.css native/ios.css native/windows.css native/chrome.css native/web.css )
         end
 
     end

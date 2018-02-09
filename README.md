@@ -14,10 +14,10 @@ Creating cross-platform apps with Rails has never been this simple, pleasing & p
 
 **Platforms:**
 
-* Android (`android`)
-* iOS (`ios`)
-* Universal Windows Platform (Windows 10) (`uwp`)
-* Chrome (`chrome`)
+* Android
+* iOS
+* Universal Windows Platform (Windows 10)
+* Chrome
 
 ---
 

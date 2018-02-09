@@ -6,8 +6,8 @@ Native::Engine.routes.draw do
     if Native.configuration&.ios
         get 'ios', to: 'native/platforms#ios'
     end
-    if Native.configuration&.uwp
-        get 'uwp', to: 'native/platforms#uwp'
+    if Native.configuration&.windows
+        get 'windows', to: 'native/platforms#windows'
     end
     if Native.configuration&.chrome
         get 'chrome', to: 'native/platforms#chrome'

@@ -28,7 +28,7 @@ class NativeGenerator < Rails::Generators::Base
     def create_assets
         create_assets_for 'android'
         create_assets_for 'ios'
-        create_assets_for 'uwp'
+        create_assets_for 'windows'
         create_assets_for 'chrome'
         create_assets_for 'web'
     end

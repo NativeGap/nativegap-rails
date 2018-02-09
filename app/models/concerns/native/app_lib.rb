@@ -6,7 +6,7 @@ module Native
         included do
             scope :android, -> { where(platform: 'android') }
             scope :ios, -> { where(platform: 'ios') }
-            scope :uwp, -> { where(platform: 'uwp') }
+            scope :windows, -> { where(platform: 'windows') }
             scope :chrome, -> { where(platform: 'chrome') }
             scope :platforms, -> { group_by(&:platform) }
             scope :apps, -> { group_by(&:url) }
