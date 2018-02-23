@@ -1,4 +1,4 @@
-module NativeHelper
+module NativeGapHelper
 
     def current_app
         NativeGap::App.find(cookies[:nativegapAppId]) if cookies[:nativegapAppId]
