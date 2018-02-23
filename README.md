@@ -94,7 +94,7 @@ That's it!
 
 ### Assets
 
-With Native it is fairly simple to add platform specific stylesheets and scripts. In your assets directory you have a new folder for your `javascripts` and `stylesheets` (`app/assets/.../nativegap`). In these two folders you are able to add custom assets for specific platforms including `web` specific assets.
+With NativeGap on Rails it is fairly simple to add platform specific stylesheets and scripts. In your assets directory you have a new folder for your `javascripts` and `stylesheets` (`app/assets/.../nativegap`). In these two folders you are able to add custom assets for specific platforms including `web` specific assets.
 
 You simple have to add ...
 

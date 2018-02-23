@@ -9,12 +9,12 @@
 * bugfixes
     * fixed `uninitialized constant NativeGap::Railtie::NativeGapModel`
 
-### 3.0.1 - 2018/01/09
+### 3.0.1 - 2018/02/09
 
 * enhancements
     * remove unnecessary configuration options
 
-### 3.0.0 - 2018/01/09
+### 3.0.0 - 2018/02/09
 
 * features
     * streamlined `App` model
